@@ -41,6 +41,12 @@ let make = (_children) => {
             ...<ComponentWithTheme />
           </ReactFela.ThemeProvider>
         </ExampleGroup>
+        <ExampleGroup title="connect">
+          <ConnectedHeader title="Hello World" color="red" size="17px" />
+          <ReactFela.ThemeProvider theme=ConnectedHeader2.theme>
+            ...<ConnectedHeader2 title="Hello World" />
+          </ReactFela.ThemeProvider>
+        </ExampleGroup>
       </div>
     </ReactFela.Provider>
 };
