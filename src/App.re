@@ -10,7 +10,7 @@ let make = (_children) => {
           <Title fontSize="20" color="red"> "I am red" </Title>
           <BorderedTitle color="red" borderWidth="2"> "I am red" </BorderedTitle>
           <ReactFela.ThemeProvider theme=ThemedTitle.theme>
-            <ThemedTitle> "I am green and big" </ThemedTitle>
+            ...<ThemedTitle> "I am green and big" </ThemedTitle>
           </ReactFela.ThemeProvider>
           <TitleClick fontSize="23" color="red" onClick=TitleClick.greet>
             "Hello World"
@@ -25,6 +25,21 @@ let make = (_children) => {
             fontSize="23" color="red" dataFoo="bar" onClick=TitleWithProxyAndPassThrough.greet>
             "Hello World"
           </TitleWithProxyAndPassThrough>
+        </ExampleGroup>
+        <ExampleGroup title="ThemeProvider">
+          <ReactFela.ThemeProvider theme={"color": "blue", "fontSize": "15px"}>
+            ...<div>
+                 <ThemedText> "I am blue and 15px sized" </ThemedText>
+                 <ReactFela.ThemeProvider overwrite=true theme={"fontSize": "20px"}>
+                   ...<ThemedText> "I am red and 20px sized" </ThemedText>
+                 </ReactFela.ThemeProvider>
+               </div>
+          </ReactFela.ThemeProvider>
+        </ExampleGroup>
+        <ExampleGroup title="withTheme">
+          <ReactFela.ThemeProvider theme={"primary": "red"}>
+            ...<ComponentWithTheme />
+          </ReactFela.ThemeProvider>
         </ExampleGroup>
       </div>
     </ReactFela.Provider>
