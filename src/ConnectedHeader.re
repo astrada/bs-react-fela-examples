@@ -21,9 +21,9 @@ let rules = {"container": container, "title": title};
 
 let make = (~title, ~color: string, ~size: string, children) =>
   ReactFela.connect(
-    rules,
-    Header.component,
-    Header.make(~title),
-    {"color": color, "size": size},
+    ~rules,
+    ~component=Header.component,
+    ~make=Header.make(~title),
+    ~props={"color": color, "size": size},
     children
   );

@@ -18,4 +18,10 @@ let rules = (props) => {
 let theme = {"colors": {"primary": "blue"}};
 
 let make = (~title, children) =>
-  ReactFela.connect(rules, Header.component, Header.make(~title), Js.Obj.empty(), children);
+  ReactFela.connect(
+    ~rules,
+    ~component=Header.component,
+    ~make=Header.make(~title),
+    ~props=Js.Obj.empty(),
+    children
+  );

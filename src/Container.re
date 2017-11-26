@@ -5,4 +5,4 @@ let container = (props) => {
 };
 
 let make = (~padding, children) =>
-  ReactFela.createComponent(~rule=container, {"padding": padding}, children);
+  ReactFela.createComponent(~rule=container, ~props={"padding": padding}, children);

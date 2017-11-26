@@ -4,6 +4,6 @@ let make = (~fontSize, ~color, children) =>
   ReactFela.createComponent(
     ~rule=title,
     ~baseElement=`String("h1"),
-    {"fontSize": fontSize, "color": color},
+    ~props={"fontSize": fontSize, "color": color},
     children
   );

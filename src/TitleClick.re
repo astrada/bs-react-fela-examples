@@ -11,6 +11,6 @@ let make = (~fontSize, ~color, ~onClick, children) =>
     ~rule=title,
     ~baseElement=`String("div"),
     ~passThrough=[|"onClick"|],
-    {"fontSize": fontSize, "color": color, "onClick": onClick},
+    ~props={"fontSize": fontSize, "color": color, "onClick": onClick},
     children
   );

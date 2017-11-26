@@ -7,7 +7,7 @@ module Group = {
     ReactFela.createComponent(
       ~rule=exampleGroup,
       ~baseElement=`String("fieldset"),
-      Js.Obj.empty(),
+      ~props=Js.Obj.empty(),
       children
     );
 };

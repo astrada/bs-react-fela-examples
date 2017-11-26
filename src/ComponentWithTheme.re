@@ -7,4 +7,5 @@ module Component = {
   };
 };
 
-let make = (children) => ReactFela.withTheme(Component.component, Component.make, children);
+let make = (children) =>
+  ReactFela.withTheme(~component=Component.component, ~make=Component.make, children);

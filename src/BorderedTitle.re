@@ -8,6 +8,6 @@ let make = (~color, ~borderWidth, children) =>
   ReactFela.createComponent(
     ~rule=bordered,
     ~baseElement=`ReactClass(titleReactClass),
-    {"color": color, "borderWidth": borderWidth},
+    ~props={"color": color, "borderWidth": borderWidth},
     children
   );

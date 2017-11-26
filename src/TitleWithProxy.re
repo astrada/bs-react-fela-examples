@@ -10,7 +10,7 @@ let make = (~fontSize, ~color, ~dataFoo, ~onClick, children) =>
   ReactFela.createComponentWithProxy(
     ~rule=title,
     ~baseElement=`String("div"),
-    {"fontSize": fontSize, "color": color, "data-foo": dataFoo, "onClick": onClick},
+    ~props={"fontSize": fontSize, "color": color, "data-foo": dataFoo, "onClick": onClick},
     children
   );
 
