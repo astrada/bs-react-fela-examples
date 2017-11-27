@@ -17,7 +17,7 @@ let title = (props: {. "size": string, "color": string}) => {
   "color": props##color
 };
 
-let rules = {"container": container, "title": title};
+let rules = `Object({"container": container, "title": title});
 
 let make = (~title, ~color: string, ~size: string, children) =>
   ReactFela.connect(

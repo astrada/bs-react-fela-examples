@@ -9,11 +9,14 @@ module Header = {
   };
 };
 
-let rules = (props) => {
-  let theme = props##_felaTheme;
-  let color = {"color": theme##colors##primary};
-  {"container": color, "title": color}
-};
+let rules =
+  `Function(
+    (props) => {
+      let theme = props##_felaTheme;
+      let color = {"color": theme##colors##primary};
+      {"container": color, "title": color}
+    }
+  );
 
 let theme = {"colors": {"primary": "blue"}};
 
