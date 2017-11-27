@@ -10,7 +10,7 @@ module Header = {
 };
 
 let rules = (props) => {
-  let theme = props##theme;
+  let theme = props##_felaTheme;
   let color = {"color": theme##colors##primary};
   {"container": color, "title": color}
 };
