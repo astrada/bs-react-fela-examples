@@ -1231,6 +1231,13 @@ bs-loader@^1.8.0:
     loader-utils "^1.1.0"
     read-bsconfig "^1.0.1"
 
+bs-react-fela@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/bs-react-fela/-/bs-react-fela-0.1.0.tgz#c689bd3639dbe146a3e50d0f142c8272c1214b8b"
+  dependencies:
+    fela "^6.0.5"
+    react-fela "^6.0.5"
+
 bser@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/bser/-/bser-1.0.2.tgz#381116970b2a6deea5646dd15dd7278444b56169"
@@ -5534,7 +5541,7 @@ react-error-overlay@^1.0.9:
     settle-promise "1.0.0"
     source-map "0.5.6"
 
-react-fela@^6.1.0:
+react-fela@^6.0.5, react-fela@^6.1.0:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/react-fela/-/react-fela-6.1.1.tgz#11ebfcb49a27a0bff8edd2c988bfbc8278b04f0f"
   dependencies:
