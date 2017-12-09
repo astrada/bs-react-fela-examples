@@ -1,8 +1,5 @@
-let title = (props) => {
-  "lineHeight": 1.2,
-  "fontSize": props##fontSize ++ "px",
-  "color": props##color
-};
+let title = (props) =>
+  Css.(style([lineHeight(em(1.2)), fontSize(px(props##fontSize)), color(props##color)]));
 
 let greet = () => Js.log("Hello World");
 

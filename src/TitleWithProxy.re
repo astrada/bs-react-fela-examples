@@ -1,10 +1,13 @@
 [@bs.get_index] external getProp : (Js.t({..}), string) => 'a = "";
 
-let title = (props) => {
-  "lineHeight": getProp(props, "data-foo") === "bar" ? 1.2 : 1.5,
-  "fontSize": props##fontSize ++ "px",
-  "color": props##color
-};
+let title = (props) =>
+  Css.(
+    style([
+      lineHeight(getProp(props, "data-foo") === "bar" ? em(1.2) : em(1.5)),
+      fontSize(px(props##fontSize)),
+      color(props##color)
+    ])
+  );
 
 let make = (~fontSize, ~color, ~dataFoo, ~onClick, children) =>
   ReactFela.createComponentWithProxy(

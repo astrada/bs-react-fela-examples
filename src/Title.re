@@ -1,4 +1,4 @@
-let title = (props) => {"fontSize": props##fontSize ++ "px", "color": props##color};
+let title = (props) => Css.(style([fontSize(px(props##fontSize)), color(props##color)]));
 
 let make = (~fontSize, ~color, children) =>
   ReactFela.createComponent(

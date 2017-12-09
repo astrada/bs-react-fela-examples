@@ -13,7 +13,7 @@ let rules =
   `Function(
     (props) => {
       let theme = props##_felaTheme;
-      let color = {"color": theme##colors##primary};
+      let color = Css.(style([color(theme##colors##primary)]));
       {"container": color, "title": color}
     }
   );

@@ -6,23 +6,23 @@ let make = (_children) => {
     <ReactFela.Provider>
       <div>
         <ExampleGroup title="createComponent">
-          <Container padding="20"> "Padding anywhere" </Container>
-          <Title fontSize="20" color="red"> "I am red" </Title>
-          <BorderedTitle color="red" borderWidth="2"> "I am red" </BorderedTitle>
+          <Container padding=20> "Padding anywhere" </Container>
+          <Title fontSize=20 color=Css.red> "I am red" </Title>
+          <BorderedTitle color="red" borderWidth=2> "I am red" </BorderedTitle>
           <ReactFela.ThemeProvider theme=ThemedTitle.theme>
             ...<ThemedTitle> "I am green and big" </ThemedTitle>
           </ReactFela.ThemeProvider>
-          <TitleClick fontSize="23" color="red" onClick=TitleClick.greet>
+          <TitleClick fontSize=23 color=Css.red onClick=TitleClick.greet>
             "Hello World"
           </TitleClick>
           <ExtendedTitle color="green"> "Hello World" </ExtendedTitle>
         </ExampleGroup>
         <ExampleGroup title="createComponentWithProxy">
-          <TitleWithProxy fontSize="23" color="red" dataFoo="baz" onClick=TitleWithProxy.greet>
+          <TitleWithProxy fontSize=23 color=Css.red dataFoo="baz" onClick=TitleWithProxy.greet>
             "Hello World"
           </TitleWithProxy>
           <TitleWithProxyAndPassThrough
-            fontSize="23" color="red" dataFoo="bar" onClick=TitleWithProxyAndPassThrough.greet>
+            fontSize=23 color=Css.red dataFoo="bar" onClick=TitleWithProxyAndPassThrough.greet>
             "Hello World"
           </TitleWithProxyAndPassThrough>
         </ExampleGroup>

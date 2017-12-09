@@ -9,13 +9,13 @@ module Header = {
   };
 };
 
-let container = (_props: unit) => {"textAlign": "center", "padding": "20px", "height": "200px"};
+let container: unit => {. "textAlign": string, "padding": string, "height": string} =
+  (_props) => Css.(style([textAlign(Center), padding(px(20)), height(px(200))]));
 
-let title = (props: {. "size": string, "color": string}) => {
-  "lineHeight": 1.2,
-  "fontSize": props##size,
-  "color": props##color
-};
+let title:
+  {. "size": int, "color": Css.color} =>
+  {. "lineHeight": string, "fontSize": string, "color": string} =
+  (props) => Css.(style([lineHeight(em(1.2)), fontSize(px(props##size)), color(props##color)]));
 
 let rules = `Object({"container": container, "title": title});
 

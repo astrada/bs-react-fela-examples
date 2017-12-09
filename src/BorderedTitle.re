@@ -1,8 +1,9 @@
-let title = (props) => {"fontSize": "20px", "color": props##color};
+let title = (props) => Css.(style([fontSize(px(20)), color(props##color)]));
 
 let titleReactClass = ReactFela.createReactClassWithBaseElement(title, `String("h1"));
 
-let bordered = (props) => {"border": props##borderWidth ++ "px solid green"};
+let bordered = (props) =>
+  Css.(style([borderWidth(px(props##borderWidth)), borderStyle(Solid), borderColor(green)]));
 
 let make = (~color, ~borderWidth, children) =>
   ReactFela.createComponent(
