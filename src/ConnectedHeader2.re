@@ -2,7 +2,7 @@ module Header = {
   let component = ReasonReact.statelessComponent("Header");
   let make = (~title, ~styles, _children) => {
     ...component,
-    render: (_self) =>
+    render: _self =>
       <header className=styles##container>
         <h1 className=styles##title> (ReasonReact.stringToElement(title)) </h1>
       </header>
@@ -11,14 +11,18 @@ module Header = {
 
 let rules =
   `Function(
-    (props) => {
+    props => {
       let theme = props##_felaTheme;
       let color = Css.(style([color(theme##colors##primary)]));
-      {"container": color, "title": color}
+      {"container": color, "title": color};
     }
   );
 
-let theme = {"colors": {"primary": "blue"}};
+let theme = {
+  "colors": {
+    "primary": "blue"
+  }
+};
 
 let make = (~title, children) =>
   ReactFela.connect(

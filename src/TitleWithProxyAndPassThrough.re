@@ -1,6 +1,6 @@
 [@bs.get_index] external getProp : (Js.t({..}), string) => 'a = "";
 
-let title = (props) =>
+let title = props =>
   Css.(
     style([
       lineHeight(getProp(props, "data-foo") === "bar" ? em(1.2) : em(1.5)),
@@ -14,7 +14,12 @@ let make = (~fontSize, ~color, ~dataFoo, ~onClick, children) =>
     ~rule=title,
     ~baseElement=`String("div"),
     ~passThrough=[|"data-foo"|],
-    ~props={"fontSize": fontSize, "color": color, "data-foo": dataFoo, "onClick": onClick},
+    ~props={
+      "fontSize": fontSize,
+      "color": color,
+      "data-foo": dataFoo,
+      "onClick": onClick
+    },
     children
   );
 

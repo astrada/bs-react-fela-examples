@@ -2,20 +2,43 @@ module Header = {
   let component = ReasonReact.statelessComponent("Header");
   let make = (~title, ~styles, _children) => {
     ...component,
-    render: (_self) =>
+    render: _self =>
       <header className=styles##container>
         <h1 className=styles##title> (ReasonReact.stringToElement(title)) </h1>
       </header>
   };
 };
 
-let container: unit => {. "textAlign": string, "padding": string, "height": string} =
-  (_props) => Css.(style([textAlign(Center), padding(px(20)), height(px(200))]));
+let container:
+  unit =>
+  {
+    .
+    "textAlign": string,
+    "padding": string,
+    "height": string
+  } =
+  _props => Css.(style([textAlign(Center), padding(px(20)), height(px(200))]));
 
 let title:
-  {. "size": int, "color": Css.color} =>
-  {. "lineHeight": string, "fontSize": string, "color": string} =
-  (props) => Css.(style([lineHeight(em(1.2)), fontSize(px(props##size)), color(props##color)]));
+  {
+    .
+    "size": int,
+    "color": Css.color
+  } =>
+  {
+    .
+    "lineHeight": string,
+    "fontSize": string,
+    "color": string
+  } =
+  props =>
+    Css.(
+      style([
+        lineHeight(em(1.2)),
+        fontSize(px(props##size)),
+        color(props##color)
+      ])
+    );
 
 let rules = `Object({"container": container, "title": title});
 

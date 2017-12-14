@@ -1,9 +1,9 @@
-let exampleGroup = (_props) => Css.(style([padding(px(5))]));
+let exampleGroup = _props => Css.(style([padding(px(5))]));
 
 let component = ReasonReact.statelessComponent("ExampleGroup");
 
 module Group = {
-  let make = (children) =>
+  let make = children =>
     ReactFela.createComponent(
       ~rule=exampleGroup,
       ~baseElement=`String("fieldset"),
@@ -14,8 +14,13 @@ module Group = {
 
 let make = (~title, children) => {
   ...component,
-  render: (_self) => {
-    Js.Array.unshift(<legend> (ReasonReact.stringToElement(title)) </legend>, children) |> ignore;
-    <Group> children </Group>
+  render: _self => {
+    let titleElement = ReasonReact.stringToElement(title);
+    let groupChildren =
+      Array.of_list([
+        <legend key="legend"> titleElement </legend>,
+        ...Array.to_list(children)
+      ]);
+    <Group> groupChildren </Group>;
   }
 };
