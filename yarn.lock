@@ -1235,9 +1235,9 @@ bs-loader@^1.8.0:
     loader-utils "^1.1.0"
     read-bsconfig "^1.0.1"
 
-bs-react-fela@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/bs-react-fela/-/bs-react-fela-0.2.0.tgz#c876ae88a9645c83a46dae29e4bb9802827be3e6"
+bs-react-fela@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/bs-react-fela/-/bs-react-fela-0.2.1.tgz#2afde4b7cba9e82f4b4a1ccbd945ef334d5e6552"
   dependencies:
     fela "^6.0.5"
     react-fela "^6.0.5"
