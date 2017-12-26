@@ -2,7 +2,7 @@ let text = props => {
   let themeColor = props##theme##color;
   let themeColor = Js.Nullable.to_opt(themeColor);
   let themeColor = Js.Option.getWithDefault("red", themeColor);
-  Css.(
+  BsCssCore.Css.(
     style([fontSize(px(props##theme##fontSize)), unsafe("color", themeColor)])
   );
 };

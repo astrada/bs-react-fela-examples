@@ -1,5 +1,5 @@
 let title = props =>
-  Css.(
+  BsCssCore.Css.(
     style([
       lineHeight(em(1.2)),
       fontSize(px(props##fontSize)),

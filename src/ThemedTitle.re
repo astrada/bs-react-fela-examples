@@ -1,7 +1,7 @@
 let theme = {"fontColor": "green", "fontSize": "30px"};
 
 let title = props =>
-  Css.(
+  BsCssCore.Css.(
     style([
       fontSize(px(props##theme##fontSize)),
       color(props##theme##fontColor)

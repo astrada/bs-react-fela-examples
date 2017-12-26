@@ -1,7 +1,7 @@
 [@bs.get_index] external getProp : (Js.t({..}), string) => 'a = "";
 
 let title = props =>
-  Css.(
+  BsCssCore.Css.(
     style([
       lineHeight(getProp(props, "data-foo") === "bar" ? em(1.2) : em(1.5)),
       fontSize(px(props##fontSize)),

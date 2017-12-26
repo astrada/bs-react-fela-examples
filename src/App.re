@@ -9,7 +9,7 @@ let make = _children => {
           <Container key="container" padding=20>
             "Padding anywhere"
           </Container>
-          <Title key="title" fontSize=20 color=Css.red> "I am red" </Title>
+          <Title key="title" fontSize=20 color=BsCssCore.Css.red> "I am red" </Title>
           <BorderedTitle key="borderedTitle" color="red" borderWidth=2>
             "I am red"
           </BorderedTitle>
@@ -19,7 +19,7 @@ let make = _children => {
           <TitleClick
             key="titleClick"
             fontSize=23
-            color=Css.red
+            color=BsCssCore.Css.red
             onClick=TitleClick.greet>
             "Hello World"
           </TitleClick>
@@ -31,7 +31,7 @@ let make = _children => {
           <TitleWithProxy
             key="titleWithProxy"
             fontSize=23
-            color=Css.red
+            color=BsCssCore.Css.red
             dataFoo="baz"
             onClick=TitleWithProxy.greet>
             "Hello World"
@@ -39,7 +39,7 @@ let make = _children => {
           <TitleWithProxyAndPassThrough
             key="titleWithProxyAndPassThrough"
             fontSize=23
-            color=Css.red
+            color=BsCssCore.Css.red
             dataFoo="bar"
             onClick=TitleWithProxyAndPassThrough.greet>
             "Hello World"

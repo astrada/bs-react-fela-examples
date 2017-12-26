@@ -1,5 +1,5 @@
 let container = props =>
-  Css.(
+  BsCssCore.Css.(
     style([
       padding(px(props##padding)),
       backgroundColor(rgb(124, 114, 231)),

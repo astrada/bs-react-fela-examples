@@ -17,13 +17,16 @@ let container:
     "padding": string,
     "height": string
   } =
-  _props => Css.(style([textAlign(Center), padding(px(20)), height(px(200))]));
+  _props =>
+    BsCssCore.Css.(
+      style([textAlign(Center), padding(px(20)), height(px(200))])
+    );
 
 let title:
   {
     .
     "size": int,
-    "color": Css.color
+    "color": BsCssCore.Css.color
   } =>
   {
     .
@@ -32,7 +35,7 @@ let title:
     "color": string
   } =
   props =>
-    Css.(
+    BsCssCore.Css.(
       style([
         lineHeight(em(1.2)),
         fontSize(px(props##size)),

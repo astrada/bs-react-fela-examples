@@ -1,4 +1,4 @@
-let exampleGroup = _props => Css.(style([padding(px(5))]));
+let exampleGroup = _props => BsCssCore.Css.(style([padding(px(5))]));
 
 let component = ReasonReact.statelessComponent("ExampleGroup");
 
