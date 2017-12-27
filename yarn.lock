@@ -1218,9 +1218,9 @@ browserslist@^2.1.2, browserslist@^2.1.3:
     caniuse-lite "^1.0.30000758"
     electron-to-chromium "^1.3.27"
 
-bs-css-core@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/bs-css-core/-/bs-css-core-0.2.1.tgz#5592e4ea9c316e994dd6054daa715a611478a5b3"
+bs-css-core@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/bs-css-core/-/bs-css-core-0.2.2.tgz#b1878862a01d2229102cb3263c34803368a241cc"
 
 bs-jest@^0.2.0:
   version "0.2.0"
