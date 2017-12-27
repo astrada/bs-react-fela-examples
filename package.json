@@ -1,6 +1,6 @@
 {
   "name": "bs-react-fela-examples",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "BuckleScript react-fela examples",
   "dependencies": {
     "fela": "^6.0.5",
@@ -13,8 +13,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "prepare": "npm link bs-platform"
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
@@ -29,9 +28,10 @@
   "author": "Alessandro Strada <alessandro.strada@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "bs-css-core": "^0.2.0",
+    "bs-css-core": "^0.2.1",
     "bs-jest": "^0.2.0",
-    "bs-react-fela": "^0.2.1",
+    "bs-platform": "^2.1.0",
+    "bs-react-fela": "^0.2.2",
     "reason-react": "^0.3.0"
   }
 }
