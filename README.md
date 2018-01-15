@@ -10,9 +10,10 @@ examples.
 
 1. Install dependencies:
 
-       yarn install
+    npm install --global bs-platform
+    yarn install
 
 2. Start the demo:
 
-       yarn start
+    yarn start
        

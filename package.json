@@ -13,6 +13,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "prepare": "npm link bs-platform",
     "eject": "react-scripts eject"
   },
   "repository": {
@@ -30,7 +31,6 @@
   "devDependencies": {
     "bs-css-core": "^0.2.2",
     "bs-jest": "^0.2.0",
-    "bs-platform": "^2.1.0",
     "bs-react-fela": "^0.2.2",
     "reason-react": "^0.3.0"
   }
