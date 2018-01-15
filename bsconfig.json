@@ -1,7 +1,11 @@
 {
   "name": "bs-react-fela-examples",
   "sources": ["src"],
-  "bs-dependencies": ["reason-react", "bs-react-fela", "bs-css-core"],
+  "bs-dependencies": [
+    "reason-react",
+    "@astrada/bs-react-fela",
+    "bs-css-core"
+  ],
   "reason": {
     "react-jsx": 2
   },

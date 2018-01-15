@@ -1,6 +1,6 @@
 {
   "name": "bs-react-fela-examples",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "BuckleScript react-fela examples",
   "dependencies": {
     "fela": "^6.0.5",
@@ -31,7 +31,7 @@
   "devDependencies": {
     "bs-css-core": "^0.2.2",
     "bs-jest": "^0.2.0",
-    "bs-react-fela": "^0.2.2",
-    "reason-react": "^0.3.0"
+    "@astrada/bs-react-fela": "^0.2.3",
+    "reason-react": "^0.3.1"
   }
 }
