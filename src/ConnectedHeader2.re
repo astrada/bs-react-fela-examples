@@ -4,7 +4,7 @@ module Header = {
     ...component,
     render: _self =>
       <header className=styles##container>
-        <h1 className=styles##title> (ReasonReact.stringToElement(title)) </h1>
+        <h1 className=styles##title> (ReasonReact.string(title)) </h1>
       </header>
   };
 };
@@ -13,14 +13,14 @@ let rules =
   `Function(
     props => {
       let theme = props##theme;
-      let color = BsCssCore.Css.(style([color(theme##colors##primary)]));
+      let color = Css.(style([color(theme##colors##primary)]));
       {"container": color, "title": color};
     }
   );
 
 let theme = {
   "colors": {
-    "primary": "blue"
+    "primary": Css.blue
   }
 };
 

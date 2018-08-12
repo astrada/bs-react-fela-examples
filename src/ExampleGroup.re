@@ -1,4 +1,4 @@
-let exampleGroup = _props => BsCssCore.Css.(style([padding(px(5))]));
+let exampleGroup = _props => Css.(style([padding(px(5))]));
 
 let component = ReasonReact.statelessComponent("ExampleGroup");
 
@@ -15,7 +15,7 @@ module Group = {
 let make = (~title, children) => {
   ...component,
   render: _self => {
-    let titleElement = ReasonReact.stringToElement(title);
+    let titleElement = ReasonReact.string(title);
     let groupChildren =
       Array.of_list([
         <legend key="legend"> titleElement </legend>,

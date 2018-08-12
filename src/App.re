@@ -9,8 +9,8 @@ let make = _children => {
           <Container key="container" padding=20>
             "Padding anywhere"
           </Container>
-          <Title key="title" fontSize=20 color=BsCssCore.Css.red> "I am red" </Title>
-          <BorderedTitle key="borderedTitle" color="red" borderWidth=2>
+          <Title key="title" fontSize=20 color=Css.red> "I am red" </Title>
+          <BorderedTitle key="borderedTitle" color=Css.red borderWidth=2>
             "I am red"
           </BorderedTitle>
           <ReactFela.ThemeProvider key="themedTitle" theme=ThemedTitle.theme>
@@ -19,11 +19,11 @@ let make = _children => {
           <TitleClick
             key="titleClick"
             fontSize=23
-            color=BsCssCore.Css.red
+            color=Css.red
             onClick=TitleClick.greet>
             "Hello World"
           </TitleClick>
-          <ExtendedTitle key="extendedTitle" color="green">
+          <ExtendedTitle key="extendedTitle" color=Css.green>
             "Hello World"
           </ExtendedTitle>
         </ExampleGroup>
@@ -31,7 +31,7 @@ let make = _children => {
           <TitleWithProxy
             key="titleWithProxy"
             fontSize=23
-            color=BsCssCore.Css.red
+            color=Css.red
             dataFoo="baz"
             onClick=TitleWithProxy.greet>
             "Hello World"
@@ -39,7 +39,7 @@ let make = _children => {
           <TitleWithProxyAndPassThrough
             key="titleWithProxyAndPassThrough"
             fontSize=23
-            color=BsCssCore.Css.red
+            color=Css.red
             dataFoo="bar"
             onClick=TitleWithProxyAndPassThrough.greet>
             "Hello World"
@@ -67,7 +67,7 @@ let make = _children => {
           <ConnectedHeader
             key="connectedHeader"
             title="Hello World"
-            color="red"
+            color=Css.red
             size="17px"
           />
           <ReactFela.ThemeProvider

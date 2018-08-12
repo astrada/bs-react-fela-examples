@@ -1,14 +1,14 @@
 let title = props =>
-  BsCssCore.Css.(style([fontSize(px(20)), color(props##color)]));
+  Css.(style([fontSize(px(20)), color(props##color)]));
 
 let titleReactClass =
   ReactFela.createReactClassWithBaseElement(title, `String("h1"));
 
 let bordered = props =>
-  BsCssCore.Css.(
+  Css.(
     style([
       borderWidth(px(props##borderWidth)),
-      borderStyle(Solid),
+      borderStyle(solid),
       borderColor(green)
     ])
   );

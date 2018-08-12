@@ -5,7 +5,7 @@ module Component = {
     render: _self =>
       <div>
         (
-          ReasonReact.stringToElement("The primary color is " ++ theme##primary)
+          ReasonReact.string("The primary color is " ++ theme##primary)
         )
       </div>
   };

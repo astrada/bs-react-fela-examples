@@ -3,8 +3,8 @@
   "sources": ["src"],
   "bs-dependencies": [
     "reason-react",
-    "@astrada/bs-react-fela",
-    "bs-css-core"
+    "@astrada/bs-css-core",
+    "@astrada/bs-react-fela"
   ],
   "reason": {
     "react-jsx": 2

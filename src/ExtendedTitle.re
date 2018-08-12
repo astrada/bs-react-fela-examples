@@ -1,6 +1,6 @@
-let title = _props => BsCssCore.Css.(style([color(red)]));
+let title = _props => Css.(style([color(red)]));
 
-let extendTitle = props => BsCssCore.Css.(style([color(props##color)]));
+let extendTitle = props => Css.(style([color(props##color)]));
 
 let make = (~color, children) =>
   ReactFela.createComponent(
