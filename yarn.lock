@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@astrada/bs-css-core@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@astrada/bs-css-core/-/bs-css-core-0.3.1.tgz#491fae92044a8edf509e504c7a7a515c6cb693cc"
+"@astrada/bs-css-core@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@astrada/bs-css-core/-/bs-css-core-0.3.2.tgz#e916d374a3b2e2f54798dd13aebe1c2379e1a577"
 
 "@astrada/bs-react-fela@^0.3.0":
   version "0.3.0"
