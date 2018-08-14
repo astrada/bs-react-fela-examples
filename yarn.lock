@@ -6,9 +6,9 @@
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/@astrada/bs-css-core/-/bs-css-core-0.3.2.tgz#e916d374a3b2e2f54798dd13aebe1c2379e1a577"
 
-"@astrada/bs-react-fela@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@astrada/bs-react-fela/-/bs-react-fela-0.3.0.tgz#bb747edb2490575ed638d4f329d69bd2af91af05"
+"@astrada/bs-react-fela@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@astrada/bs-react-fela/-/bs-react-fela-0.3.1.tgz#a833aee883f98784216420cc1403bb9f520efb4d"
   dependencies:
     fela "^6.1.9"
     react-fela "^7.3.1"
