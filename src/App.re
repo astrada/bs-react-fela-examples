@@ -68,7 +68,7 @@ let make = _children => {
             key="connectedHeader"
             title="Hello World"
             color=Css.red
-            size="17px"
+            size=20
           />
           <ReactFela.ThemeProvider
             key="connectedHeader2" theme=ConnectedHeader2.theme>
