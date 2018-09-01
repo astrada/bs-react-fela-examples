@@ -3,7 +3,7 @@
 let title = props =>
   Css.(
     style([
-      lineHeight(getProp(props, "data-foo") === "bar" ? 1.2 : 1.5),
+      lineHeight(getProp(props, "data-foo") === "bar" ? em(1.2) : em(1.5)),
       fontSize(px(props##fontSize)),
       color(props##color)
     ])

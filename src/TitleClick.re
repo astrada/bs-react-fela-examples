@@ -1,7 +1,7 @@
 let title = props =>
   Css.(
     style([
-      lineHeight(1.2),
+      lineHeight(em(1.2)),
       fontSize(px(props##fontSize)),
       color(props##color)
     ])
